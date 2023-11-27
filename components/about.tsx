@@ -24,8 +24,7 @@ export default function About() {
         <span className="underline">Artificial Intelligence and Data Science</span> from{" "}
         <span className="font-medium">Vishwakarma Institute of Information Technology, Pune.</span>{" "}
         I'm currently in my <span className="font-bold">Third Year</span> of college. I'm a{" "}
-        <span className="font-medium">self-taught</span> developer. I started
-        learning to code when I was in my{" "}
+        <span className="font-medium">self-taught</span> developer. My current <span className="font-medium">CGPA</span> is <span className="font-bold">8.32</span>. I started learning to code when I was in my{" "}
         <span className="font-bold">Second Year</span> of college. I started
         with{" "}
         <span className="font-medium">
