@@ -2,9 +2,10 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "@/public/corpcomment.png";
-import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
+import Portfolio from "@/public/Portfolio.png";
+import discord from "@/public/private-discord.png";
+import innovate from "@/public/innovate-3d.png";
+import tracker from "@/public/mental-tracker.png";
 
 export const links = [
   {
@@ -35,73 +36,65 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
+    title: "Machine Learning Intern",
+    location: "Pune, IN",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
-    icon: React.createElement(LuGraduationCap),
-    date: "2019",
-  },
-  {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
-    description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
+      "I built an entire Machine Learning model from scratch. Worked using various Python3 libraries like numpy , pandas, seaborn, matplotlib and plotly.",
     icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
+    date: "June 2023 – July 2023",
   },
   {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
+    title: "Upcoming",
+    location: "",
     description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
-    icon: React.createElement(FaReact),
-    date: "2021 - present",
+      "",
+    icon: React.createElement(CgWorkAlt),
+    date: "",
   },
 ] as const;
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "Portfolio",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    imageUrl: corpcommentImg,
+      "I worked building a fully responsive Next.js portfolio. It has a dark mode toggle and a contact form. It's hosted on Vercel.",
+    tags: ["Next.js", "React", "Typescript", "Framer Motion", "Tailwind CSS", "Sanity.io", "Vercel", "Git"],
+    imageUrl: Portfolio,
   },
   {
-    title: "rmtDev",
+    title: "Discord Clone",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: rmtdevImg,
+      "Built a fully responsive Discord clone. It is a platform specially designed for gamers to create game rooms and servers.",
+    tags: ["Next.js", "React", " Socket.io", "Prisma", "Tailwind CSS", "MySQL", "Git"],
+    imageUrl: discord,
   },
   {
-    title: "Word Analytics",
+    title: "AI Mental Fitness Tracker",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: wordanalyticsImg,
+      "I made this project in an internship under IBM SkillBuild. This is an AI machine specifically made for Mental Fitness Tracking.",
+    tags: ["Python3", "Jupyter Notebook", "Kaggle", "Git"],
+    imageUrl: tracker,
+  },
+  {
+    title: "INNOVATE 3D",
+    description:
+      "Built a social media website aiming 3D model creators. Used and managed Firebase for authentication and as database.",
+    tags: ["React.js", "HTML", "CSS", "JavaScript", "Firebase", "Blender", "Git"],
+    imageUrl: innovate,
   },
 ] as const;
 
 export const skillsData = [
-  "HTML",
-  "CSS",
-  "JavaScript",
-  "TypeScript",
-  "React",
+  "React.js",
   "Next.js",
-  "Node.js",
-  "Git",
-  "Tailwind",
-  "Prisma",
+  "Ndde.js",
+  "TypeScript",
+  "Flutter",
+  "Compose",
+  "Javascript",
   "MongoDB",
-  "Redux",
-  "GraphQL",
-  "Apollo",
-  "Express",
-  "PostgreSQL",
+  "MySQL",
+  "Firebase",
+  "Java",
   "Python",
-  "Django",
-  "Framer Motion",
 ] as const;

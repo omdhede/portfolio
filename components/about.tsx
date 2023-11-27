@@ -19,30 +19,35 @@ export default function About() {
     >
       <SectionHeading>About me</SectionHeading>
       <p className="mb-3">
-        After graduating with a degree in{" "}
-        <span className="font-medium">Accounting</span>, I decided to pursue my
-        passion for programming. I enrolled in a coding bootcamp and learned{" "}
-        <span className="font-medium">full-stack web development</span>.{" "}
-        <span className="italic">My favorite part of programming</span> is the
-        problem-solving aspect. I <span className="underline">love</span> the
-        feeling of finally figuring out a solution to a problem. My core stack
-        is{" "}
+        After I finished my <span className="font-bold">10 + 2</span>{" "}
+        , I chose to pursue my <span className="font-bold">B. Tech</span> degree in{" "}
+        <span className="underline">Artificial Intelligence and Data Science</span> from{" "}
+        <span className="font-medium">Vishwakarma Institute of Information Technology, Pune.</span>{" "}
+        I'm currently in my <span className="font-bold">Third Year</span> of college. I'm a{" "}
+        <span className="font-medium">self-taught</span> developer. I started
+        learning to code when I was in my{" "}
+        <span className="font-bold">Second Year</span> of college. I started
+        with{" "}
         <span className="font-medium">
-          React, Next.js, Node.js, and MongoDB
+          HTML, CSS, and JavaScript
         </span>
-        . I am also familiar with TypeScript and Prisma. I am always looking to
-        learn new technologies. I am currently looking for a{" "}
-        <span className="font-medium">full-time position</span> as a software
-        developer.
+        . I then started learning{" "}
+        <span className="font-medium">React</span> and{" "}
+        <span className="font-medium">Next.js</span>. I am currently learning{" "}
+        <span className="font-medium">TypeScript</span>. I have also worked
+        with <span className="font-medium">Flutter</span>, {" "}
+        <span className="font-medium">Dart</span> and <span className="font-medium">Compose</span>.  I am also familiar with{" "}
+        <span className="font-medium">Firebase</span>, {" "}
+        <span className="font-medium">MongoDB</span> and <span className="font-medium">MySQL</span>. I haved also used {" "}
+        <span className="font-medium">Python</span> to create a few <span className="font-bold">Machine Learning</span> models. I am also an expert in{" "}
+        <span className="font-bold">Java</span> and I use it for <span className="font-medium">competitive programming</span> .
+        <span className="font-medium"></span> {" "}
       </p>
 
       <p>
         <span className="italic">When I'm not coding</span>, I enjoy playing
-        video games, watching movies, and playing with my dog. I also enjoy{" "}
-        <span className="font-medium">learning new things</span>. I am currently
-        learning about{" "}
-        <span className="font-medium">history and philosophy</span>. I'm also
-        learning how to play the guitar.
+        video games, watching movies, and going out for a ride in nature and have a cup of <span className="font-bold">TEA</span>. I also enjoy{" "}
+        <span className="font-medium">learning new things</span>.
       </p>
     </motion.section>
   );
