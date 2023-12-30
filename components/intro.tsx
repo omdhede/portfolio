@@ -69,7 +69,7 @@ export default function Intro() {
         <span className="font-bold">B. Tech</span> from Vishwakarma Institute of Information Technology, Pune. I proudly hold the {" "}<span className="font-bold">4th rank</span> {" "}
         in the prestigious <span className="font-bold">"IEEE Hack-the-Metaverse 2023"</span>. I enjoy
         building <span className="italic">web-sites & apps</span>. My focus is{" "}
-        <span className="underline"> React, Next.js, Sanity, Typescript and Tailwind CSS</span>.
+        <span className="underline"> React, Next.js, Typescript and Tailwind CSS</span>.
       </motion.h1>
 
       <motion.div
