@@ -37,9 +37,9 @@ export default function Intro() {
               alt="Om portrait"
               width="192"
               height="192"
-              quality="95"
+              quality="100"
               priority={true}
-              className="h-24 w-24 rounded-full object-cover border-[0.35rem] border-white shadow-xl"
+              className="h-40 w-40 rounded-full object-cover border-[0.35rem] border-white shadow-xl"
             />
           </motion.div>
 
