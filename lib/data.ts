@@ -46,8 +46,7 @@ export const experiencesData = [
   {
     title: "Upcoming",
     location: "",
-    description:
-      "",
+    description: "",
     icon: React.createElement(CgWorkAlt),
     date: "",
   },
@@ -58,14 +57,31 @@ export const projectsData = [
     title: "Portfolio",
     description:
       "I worked building a fully responsive Next.js portfolio. It has a dark mode toggle and a contact form. It's hosted on Vercel.",
-    tags: ["Next.js", "React", "Typescript", "Framer Motion", "Tailwind CSS", "Sanity.io", "Vercel", "Git"],
+    tags: [
+      "Next.js",
+      "React",
+      "Typescript",
+      "Framer Motion",
+      "Tailwind CSS",
+      "Sanity.io",
+      "Vercel",
+      "Git",
+    ],
     imageUrl: Portfolio,
   },
   {
     title: "Discord Clone",
     description:
       "Built a fully responsive Discord clone. It is a platform specially designed for gamers to create game rooms and servers.",
-    tags: ["Next.js", "React", " Socket.io", "Prisma", "Tailwind CSS", "MySQL", "Git"],
+    tags: [
+      "Next.js",
+      "React",
+      " Socket.io",
+      "Prisma",
+      "Tailwind CSS",
+      "MySQL",
+      "Git",
+    ],
     imageUrl: discord,
   },
   {
@@ -79,7 +95,15 @@ export const projectsData = [
     title: "INNOVATE 3D",
     description:
       "Built a social media website aiming 3D model creators. Used and managed Firebase for authentication and as database.",
-    tags: ["React.js", "HTML", "CSS", "JavaScript", "Firebase", "Blender", "Git"],
+    tags: [
+      "React.js",
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Firebase",
+      "Blender",
+      "Git",
+    ],
     imageUrl: innovate,
   },
 ] as const;
@@ -87,7 +111,7 @@ export const projectsData = [
 export const skillsData = [
   "React.js",
   "Next.js",
-  "Ndde.js",
+  "Node.js",
   "TypeScript",
   "Flutter",
   "Compose",
