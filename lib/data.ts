@@ -54,6 +54,22 @@ export const experiencesData = [
 
 export const projectsData = [
   {
+    title: "INNOVATE 3D",
+    description:
+      "Built a social media website aiming 3D model creators. Used and managed Firebase for authentication and as database.",
+    tags: [
+      "React.js",
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Firebase",
+      "Blender",
+      "Git",
+    ],
+    imageUrl: innovate,
+    githubUrl: "https://github.com/omdhede/Innovate3D.git",
+  },
+  {
     title: "Portfolio",
     description:
       "I worked building a fully responsive Next.js portfolio. It has a dark mode toggle and a contact form. It's hosted on Vercel.",
@@ -63,11 +79,11 @@ export const projectsData = [
       "Typescript",
       "Framer Motion",
       "Tailwind CSS",
-      "Sanity.io",
       "Vercel",
       "Git",
     ],
     imageUrl: Portfolio,
+    githubUrl: "https://github.com/omdhede/portfolio",
   },
   {
     title: "Discord Clone",
@@ -83,6 +99,7 @@ export const projectsData = [
       "Git",
     ],
     imageUrl: discord,
+    githubUrl: "https://github.com/omdhede/discord-clone.git",
   },
   {
     title: "AI Mental Fitness Tracker",
@@ -90,21 +107,7 @@ export const projectsData = [
       "I made this project in an internship under IBM SkillBuild. This is an AI machine specifically made for Mental Fitness Tracking.",
     tags: ["Python3", "Jupyter Notebook", "Kaggle", "Git"],
     imageUrl: tracker,
-  },
-  {
-    title: "INNOVATE 3D",
-    description:
-      "Built a social media website aiming 3D model creators. Used and managed Firebase for authentication and as database.",
-    tags: [
-      "React.js",
-      "HTML",
-      "CSS",
-      "JavaScript",
-      "Firebase",
-      "Blender",
-      "Git",
-    ],
-    imageUrl: innovate,
+    githubUrl: "https://github.com/omdhede/IBM-Skill-Build-AI-Mental-Fitness-Tracker.git",
   },
 ] as const;
 
