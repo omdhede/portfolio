@@ -6,6 +6,8 @@ import Portfolio from "@/public/Portfolio.png";
 import discord from "@/public/private-discord.png";
 import innovate from "@/public/innovate-3d.png";
 import tracker from "@/public/mental-tracker.png";
+import digitalHippo from "@/public/Digital_hippo.png"
+import chatApp from "@/public/chatApp.png"
 
 export const links = [
   {
@@ -54,6 +56,47 @@ export const experiencesData = [
 
 export const projectsData = [
   {
+    title: "Digital Hippo",
+    description: "An E-Commerce website to sell digital goods with one-time payment.",
+    tags: [
+      "Next.js 14",
+      "React",
+      "tRPC",
+      "Tailwind",
+      "Payload"
+    ],
+    imageUrl: digitalHippo,
+    githubUrl: "https://github.com/omdhede/digitalhippo",
+  },
+  {
+    title: "Chat With Me",
+    description: "A real-time chatting website, where you can add friends via email.",
+    tags: [
+      "Next.js 14",
+      "React",
+      "Tailwind",
+      "Redis"
+    ],
+    imageUrl: chatApp,
+    githubUrl: "https://github.com/omdhede/realtime-chatting-app",
+  },
+  {
+    title: "Discord Clone",
+    description:
+      "Built a fully responsive Discord clone. It is a platform specially designed for gamers to create game rooms and servers.",
+    tags: [
+      "Next.js",
+      "React",
+      " Socket.io",
+      "Prisma",
+      "Tailwind CSS",
+      "MySQL",
+      "Git",
+    ],
+    imageUrl: discord,
+    githubUrl: "https://github.com/omdhede/discord-clone.git",
+  },
+  {
     title: "INNOVATE 3D",
     description:
       "Built a social media website aiming 3D model creators. Used and managed Firebase for authentication and as database.",
@@ -84,22 +127,6 @@ export const projectsData = [
     ],
     imageUrl: Portfolio,
     githubUrl: "https://github.com/omdhede/portfolio",
-  },
-  {
-    title: "Discord Clone",
-    description:
-      "Built a fully responsive Discord clone. It is a platform specially designed for gamers to create game rooms and servers.",
-    tags: [
-      "Next.js",
-      "React",
-      " Socket.io",
-      "Prisma",
-      "Tailwind CSS",
-      "MySQL",
-      "Git",
-    ],
-    imageUrl: discord,
-    githubUrl: "https://github.com/omdhede/discord-clone.git",
   },
   {
     title: "AI Mental Fitness Tracker",
