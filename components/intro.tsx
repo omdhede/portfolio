@@ -7,7 +7,8 @@ import Link from "next/link";
 import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare, FaTwitter } from "react-icons/fa";
-import { FaInstagram } from "react-icons/fa";
+import { SiLeetcode } from "react-icons/si";
+import { FaHackerrank } from "react-icons/fa6";
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
 import portrait from "public/portrait.jpg";
@@ -23,7 +24,7 @@ export default function Intro() {
   const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
 
   const plugin = React.useRef(
-    Autoplay({ delay: 2000, stopOnInteraction: false, stopOnMouseEnter: true,  })
+    Autoplay({ delay: 2000, stopOnInteraction: false, stopOnMouseEnter: true, })
   )
 
   const imageSrc = [
@@ -51,7 +52,7 @@ export default function Intro() {
           >
             <Carousel
               plugins={[plugin.current]}
-              
+
               className="w-full max-w-xs"
             >
               <CarouselContent>
@@ -81,16 +82,17 @@ export default function Intro() {
       </div>
 
       <motion.h1
-        className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl"
+        className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-3xl"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className="font-bold">Hello, I'm Om.</span> I'm a{" "}
-        <span className="font-bold">Mobile and Web Developer</span> pursuing{" "}
-        <span className="font-bold">B. Tech</span> from Vishwakarma Institute of Information Technology, Pune. I proudly hold the {" "}<span className="font-bold">4th rank</span> {" "}
-        in the prestigious <span className="font-bold">"IEEE Hack-the-Metaverse 2023"</span>. I enjoy
-        building <span className="italic">web-sites & apps</span>. My focus is{" "}
-        <span className="underline"> React, Next.js, Typescript and Tailwind CSS</span>.
+        Hello, I&apos;m{" "}
+        <span className="font-semibold text-teal-600 uppercase dark:text-teal-200">Om Dhede</span>{". "}
+        <br />
+        I&apos;m a <span className="underline">Final Year B.Tech Student</span>{" "}
+        at VIIT, Pune with a solid foundation of AI and DS with Computer Science principles.
+        Additionally, I have achieved significant milestones in various hackathons and projects, showcasing my skills.
+
       </motion.h1>
 
       <motion.div
@@ -123,16 +125,26 @@ export default function Intro() {
         </a>
 
         <div className="flex flex-1 gap-x-2 ">
+
           <a
             className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
-            href="https://x.com/omdhede"
+            href="https://leetcode.com/u/omdhede/"
             target="_blank"
           >
-            <FaTwitter />
+            <SiLeetcode size={22}/>
           </a>
 
           <a
-            className="bg-white p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
+            className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
+            href="https://www.hackerrank.com/profile/omdhede"
+            target="_blank"
+          >
+            <FaHackerrank  size={22}/>
+          </a>
+
+
+          <a
+            className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
             href="https://www.linkedin.com/in/omdhede/"
             target="_blank"
           >
@@ -147,13 +159,8 @@ export default function Intro() {
             <FaGithubSquare />
           </a>
 
-          <a
-            className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
-            href="https://instagram.com/omdhede"
-            target="_blank"
-          >
-            <FaInstagram />
-          </a>
+
+
         </div>
       </motion.div>
     </section>
