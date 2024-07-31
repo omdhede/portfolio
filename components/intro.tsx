@@ -11,10 +11,27 @@ import { FaInstagram } from "react-icons/fa";
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
 import portrait from "public/portrait.jpg";
+import ptwo from "@/public/p-two.jpg"
+import pthree from "@/public/p-three.jpg"
+import pfour from "@/public/p-four.jpg"
+import Autoplay from "embla-carousel-autoplay"
+import { Carousel, CarouselContent, CarouselItem } from "./ui/carousel";
+import { Card, CardContent } from "./ui/card";
 
 export default function Intro() {
   const { ref } = useSectionInView("Home", 0.5);
   const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
+
+  const plugin = React.useRef(
+    Autoplay({ delay: 2000, stopOnInteraction: false, stopOnMouseEnter: true,  })
+  )
+
+  const imageSrc = [
+    portrait,
+    pthree,
+    pfour,
+    ptwo,
+  ]
 
   return (
     <section
@@ -32,30 +49,34 @@ export default function Intro() {
               duration: 0.2,
             }}
           >
-            <Image
-              src={portrait}
-              alt="Om portrait"
-              width="192"
-              height="192"
-              quality="100"
-              priority={true}
-              className="h-40 w-40 rounded-full object-cover border-[0.35rem] border-white shadow-xl"
-            />
+            <Carousel
+              plugins={[plugin.current]}
+              
+              className="w-full max-w-xs"
+            >
+              <CarouselContent>
+                {imageSrc.map((src, index) => (
+                  <CarouselItem key={index}>
+                    <Card>
+                      <CardContent className="flex aspect-square items-center justify-center p-0 select-none">
+                        <div className="">
+                          <Image
+                            src={src}
+                            alt="Om portrait"
+                            width="400"
+                            height="400"
+                            quality="100"
+                            priority={true}
+                            className="h-[20rem] w-[20rem] rounded-lg object-cover border-[0.35rem] border-white shadow-xl"
+                          />
+                        </div>
+                      </CardContent>
+                    </Card>
+                  </CarouselItem>
+                ))}
+              </CarouselContent>
+            </Carousel>
           </motion.div>
-
-          <motion.span
-            className="absolute bottom-0 right-0 text-4xl"
-            initial={{ opacity: 0, scale: 0 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{
-              type: "spring",
-              stiffness: 125,
-              delay: 0.1,
-              duration: 0.7,
-            }}
-          >
-            👋
-          </motion.span>
         </div>
       </div>
 
