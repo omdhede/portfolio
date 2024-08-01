@@ -49,12 +49,12 @@ export default function About() {
         <span className="font-medium">learning new things</span>.
       </p> */}
 
-      <div className="mb-3 sm:items-start sm:justify-center sm:grid sm:grid-flow-col sm:grid-col-3 sm:gap-x-4  w-full flex flex-col items-center justify-center">
+      <div className="mb-3 ml-2 sm:ml-0 sm:items-start sm:justify-center sm:grid sm:grid-flow-col sm:grid-col-3 sm:gap-x-4  w-full flex flex-col items-start justify-start">
         <div className="flex flex-col items-start sm:pl-6 sm:mr-14 w-full mb-4 sm:mb-0">
-          <span className="text-lg font-semibold">
+          <span className="sm:text-lg text-base font-semibold">
             Let me tell you a bit more about myself
           </span>
-          <ul className="flex flex-col items-start ml-4 list-disc text-sm sm:text-base gap-y-1">
+          <ul className="flex flex-col items-start ml-4 list-disc text-xs sm:text-base gap-y-2 mt-2 sm:gap-y-1 sm:mt-1">
             <li>3x Hackathon Winner 🏆</li>
             <li>Final Year Bachelor of Technology Student 🎓</li>
             <li>Major: Artificial Intelligence and Data Science 🤖</li>
@@ -67,10 +67,10 @@ export default function About() {
           {" "}
         </div>
         <div className="flex flex-col items-start sm:ml-14 w-full">
-          <span className="text-lg font-semibold">
+          <span className="sm:text-lg text-base font-semibold">
             Leadership
           </span>
-          <ul className="flex flex-col items-start ml-4 list-disc text-sm sm:text-base gap-y-1">
+          <ul className="flex flex-col items-start ml-4 list-disc text-xs sm:text-base gap-y-2 mt-2 sm:gap-y-1 sm:mt-1">
             <li>Team Leader, DPBH, Department of Consumer Affairs</li>
             <li>Team Leader, IEEE Hack-This-Metaverse</li>
             <li>Joint Dept Head, Cisco Networking Academy</li>
