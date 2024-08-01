@@ -49,7 +49,7 @@ export default function About() {
         <span className="font-medium">learning new things</span>.
       </p> */}
 
-      <div className="mb-3 ml-2 sm:items-start sm:justify-center sm:grid sm:grid-flow-col sm:grid-col-3 sm:gap-x-4  w-full flex flex-col items-center justify-center">
+      <div className="mb-3 sm:items-start sm:justify-center sm:grid sm:grid-flow-col sm:grid-col-3 sm:gap-x-4  w-full flex flex-col items-center justify-center">
         <div className="flex flex-col items-start sm:pl-6 sm:mr-14 w-full mb-4 sm:mb-0">
           <span className="text-lg font-semibold">
             Let me tell you a bit more about myself
