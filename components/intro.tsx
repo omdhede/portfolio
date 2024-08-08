@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
-import { FaGithubSquare, FaTwitter } from "react-icons/fa";
+import { FaGithubSquare } from "react-icons/fa";
 import { SiLeetcode } from "react-icons/si";
 import { FaHackerrank } from "react-icons/fa6";
 import { useSectionInView } from "@/lib/hooks";
@@ -82,7 +82,7 @@ export default function Intro() {
       </div>
 
       <motion.h1
-        className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-3xl"
+        className="mb-10 mt-4 px-4 py-5 text-2xl font-medium !leading-[1.5] sm:text-3xl"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
